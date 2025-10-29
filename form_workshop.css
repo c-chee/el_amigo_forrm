@@ -17,6 +17,7 @@ footer {
 div {
     background: white url(images/transparent_white.png);
     margin: 10px;
+    border-radius: 3px;
 }
 
 .welcome {
@@ -39,14 +40,18 @@ div {
 }
 
 .res-form {
-    border: 10px solid white;
     background-color: #444444;
+    /* background: blacks url(images/transparent_white.png); */
+    border: 10px solid white;
+    border-radius: 3px;
+    align-items: center;
 }
 
 .res-form form{
     padding: 20px 125px;
     flex-direction: column;
     display: flex;
+    align-items: center;
 }
 
 .res-form label {
@@ -54,11 +59,12 @@ div {
     color: white;
     align-items: center;
     padding: 5px 7px;
-    width: 300px;
+    width: 100%;
     text-transform: uppercase;
     border: none;
     font-size: 11px;
     font-weight: bold;
+    border-radius: 3px;
 }
 
 .res-form input {
@@ -66,12 +72,39 @@ div {
     border: none;
     font-size: 20px;
     height: 25px;
+    width: 100%;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 5px 7px;
+    border-radius: 3px;
 }
 
 .res-form .submit-button {
     color: white;
+    width: 100%;
+    height: auto;
     background-color: #970e0d;
+    border-radius: 3px;
+}
+
+.res-form h1 {
+    font-weight: 200;
+}
+
+.res-form h4 {
+    font-weight: 200;
+    height: auto;
+}
+
+@media screen and (min-width:1000px) {
+    .welcome {
+        width: 1000px;
+        height: auto;
+    }
+
+    .res-form {
+        width: 1070px;
+        height: auto;
+    }
+
 }
